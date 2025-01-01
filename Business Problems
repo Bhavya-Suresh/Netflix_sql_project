@@ -1,4 +1,4 @@
--- 12 Business Problems & Solutions
+--- 18 Business Problems & Solutions
 
 1. Count the number of Movies vs TV Shows
 2. Find the most common rating for movies and TV shows
@@ -16,3 +16,12 @@ return top 5 year with highest avg content release!
 Categorize the content based on the presence of the keywords 'kill' and 'violence' in 
 the description field. Label content containing these keywords as 'Bad' and all other 
 content as 'Good'. Count how many items fall into each category.
+13. How many TV shows have been released in each year.
+14. List all movies that are longer than 2 hours.
+15. Which rating is the most common across all content types.
+16. List all family-friendly content (e.g., rated 'G' or 'PG')
+17. Which director has the most titles on Netflix.
+18. What percentage of the content is TV shows compared to movies.
+
+
+
