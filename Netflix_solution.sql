@@ -1,6 +1,4 @@
-select * from Netflix
-
----- 12 Business Problems & Solutions
+---- 18 Business Problems & Solutions
 --1. Count the number of Movies vs TV Shows
 
 select type, count(*) as Total_Content from netflix
@@ -97,3 +95,44 @@ GROUP BY
     ELSE 'Good'
     END
 
+-- 13. How many TV shows have been released in each year
+
+Select release_year, COUNT(*) AS TVShowCount
+from Netflix
+where type = 'TV Show'
+Group by release_year
+ORDER BY release_year desc
+
+-- 14. List all movies that are longer than 2 hours.
+
+Select title, duration
+from Netflix
+where type = 'Movie' AND CAST(LEFT(duration, CHARINDEX(' ', duration) - 1) AS INT) > 120
+order by duration desc
+
+--15. Which rating is the most common across all content types?
+
+Select rating, COUNT(*) AS RatingCount
+from Netflix
+Group by rating
+ORDER BY RatingCount DESC
+
+--16. List all family-friendly content (e.g., rated 'G' or 'PG')
+
+Select title, type, rating
+from Netflix
+where rating IN ('G', 'PG', 'PG-13')
+
+--17. Which director has the most titles on Netflix?
+
+Select director, COUNT(*) AS TitleCount
+from Netflix
+where director IS NOT NULL
+Group by director
+ORDER BY TitleCount DESC
+
+--18. What percentage of the content is TV shows compared to movies?
+
+Select type, COUNT(*) * 100.0 / (Select COUNT(*) from Netflix) AS Percentage
+from Netflix
+Group by type
