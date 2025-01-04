@@ -3,12 +3,28 @@
 ![Netflix Logo](https://raw.githubusercontent.com/Bhavya-Suresh/Netflix_sql_project/refs/heads/main/netflix-logo.webp)
 
 # Overview
-This project involves a comprehensive analysis of Netflix's movies and TV shows data using SQL. The goal is to extract valuable insights and answer various business questions based on the dataset. The following README provides a detailed account of the project's objectives, business problems and solutions.
+This project involves analyzing a dataset of Netflix movies and TV shows using SQL. The analysis focuses on extracting meaningful insights about the content available on Netflix, including genre distribution, release trends, ratings, and other key patterns.
 
-# Objectives
-Analyze the distribution of content types (movies vs TV shows).
-Identify the most common ratings for movies and TV shows.
-List and analyze content based on release years, countries, cast and durations.
+The repository includes SQL queries designed to answer various business questions and provide a better understanding of Netflix's catalog.
+
+# Analysis Objectives
+The analysis covers the following key areas:
+
+1. Content Overview:
+-Count of movies and TV shows.
+-Genre distribution across titles.
+-Content availability by release year.
+
+2. Content Trends:
+-Year-wise addition of titles to Netflix.
+-Most popular genres over time.
+
+3. Ratings Analysis:
+-Distribution of content ratings.
+-Content suitable for specific age groups.
+
+4. Directors and Actors:
+-Most featured directors and actors in Netflix titles.
 
 # Dataset
 The data for this project is sourced from the Kaggle dataset:
